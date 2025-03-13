@@ -116,7 +116,9 @@ footer {
     justify-content: center;
     background-color: #1f50aa;
     padding: 10px;
+    
 }
+
 
 /* ซ่อนเมนูบนมือถือ */
 @media screen and (max-width: 768px) {

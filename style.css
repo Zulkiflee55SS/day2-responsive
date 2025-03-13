@@ -5,6 +5,11 @@ body {
     background-color: rgb(196, 241, 255);
     text-align: center;
 }
+.active {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+
+}
 
 header {
     background-color: #0787ff;
@@ -12,7 +17,7 @@ header {
     padding: 1px; /* ระยะห่างด้านในกล่อง */
 }
 
-nav {
+/*nav {
     top: 0;
     left: 0;
     width: 100%;
@@ -20,8 +25,19 @@ nav {
     padding: 5px;
     z-index: 1000;
     text-align: center;
+}*/
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:  #1f50aa;
+    padding: 8px;
+    z-index: 1000;
 }
-
+body {
+    padding-top: 50px; 
+}
 nav a {
     color: white;
     text-decoration: none;

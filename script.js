@@ -1,10 +1,12 @@
+const menuToggle = document.querySelector(".menu-toggle");
+const navMenu = document.querySelector(".nav-menu");
 
-document.querySelector(".menu-toggle").addEventListener("click", function() {
-    document.querySelector(".nav-menu").classList.toggle("show");
-});
+menuToggle.addEventListener("click", function() {
+    navMenu.classList.toggle("show");
 
-document.querySelectorAll(".nav-menu a").forEach(link => {
-    link.addEventListener("click", function() {
-        document.querySelector(".nav-menu").classList.remove("show");
-    });
+    if (navMenu.classList.contains("show")) {
+        menuToggle.textContent = "✖";
+    } else {
+        menuToggle.textContent = "☰";
+    }
 });

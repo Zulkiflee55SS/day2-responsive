@@ -98,16 +98,52 @@ footer {
     opacity: 0.8;
 }
 
+/* สไตล์ปุ่ม ☰ */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+/* เมนูนำทางปกติ */
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    background-color: #1f50aa;
+    padding: 10px;
+}
+
+/* ซ่อนเมนูบนมือถือ */
 @media screen and (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        align-items: center;
+    .menu-toggle {
+        display: block; /* แสดงปุ่ม ☰ */
     }
 
-    nav a {
-        display: block;
-        padding: 10px;
+    .nav-menu {
+        display: none; /* ซ่อนเมนู */
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
         width: 100%;
+        background-color: #1f50aa;
+    }
+
+    .nav-menu a {
+        display:#1f50aa;
+        padding: 10px;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
         text-align: center;
     }
+}
+
+
+.show {
+    display: flex !important;
 }
